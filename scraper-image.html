@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader</title>
+<link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="scraper -image.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="nav-scraper.png" alt="Logo" loading="lazio">
+        </div>
+        <button class="toggle-btn">☰</button>
+    </nav>
+    
+<div class="menu-overlay">
+    <div class="menu-content relative">
+        <!-- Icon Close -->
+        <button class="absolute top-4 right-4" id="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <!-- Menu Items -->
+        <ul class="mt-8">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="user.html">Privasi</a></li>
+            <li><a href="dev.html">Contact & Developer</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <div class="pembungkus-utama">
+        <br>
+        <div class="background-container">
+            <img src="logo-bgscraper.png" alt="picx.io" class="bg-utama">
+                            <p class="judul-tengah"> no watermark <br> free, no sign-up needed. </p>
+        </div>
+     
+        <div class="content">
+            <form id="searchForm">
+                <input type="text" id="urlInput" placeholder="Enter TikTok URL" required>
+        <button type="submit">Search 🔎</button>
+
+            </form><br>
+            
+<div class="main-information">
+   <img src="https://img.icons8.com/?size=100&id=6cdJEps4HrFl&format=png&color=FFFFFF">
+   <p class="infomation">
+       Tekan Lama Pada Media <br> Untuk Mengunduh 
+   </p>
+</div>
+<br>
+            
+            <!-- Loader Element -->
+            <div id="loader" class="loader">
+    <div class="loader-text">Mohon Tunggu.. Sedang Memproses <br> Permintaan Anda</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div id="result">
+        <div class="author-info">
+            <img class="author-avatar" id="authorAvatar" src="" alt="Author Avatar">
+            <div class="author-name" id="authorName"></div>
+            <div id="videoStats">
+    <p id="likeCount"></p>
+    <p id="commentCount"></p>
+    <p id="shareCount"></p>
+</div>
+
+        </div>
+        <div class="video-title" id="videoTitle"></div>
+        <div class="media-frame">
+            <div class="carousel-container">
+                <div id="carousel"></div>
+                <button class="slide-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slide-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </div><br>
+    
+   
+ <div class="container-main-1">
+ <h2 class="main-1">PICX.IO - IMAGE</h2>
+ <p class="main-2">Only Support Download Slide Image <br> made with ♥️
+<a href="dev.html" class="link-dev"> @_amiiinarsyd</a>
+ </p>
+ </div>
+ <br>
+    
+    
+  
+  <script src="./node_modules/preline/dist/preline.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="scraper-image.js"></script>
+</body>
+</html>

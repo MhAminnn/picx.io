@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'apple-pro';
+    src: url('apple-pro.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body,
+img {
+    background-color: #fff;
+}
+
+.dev {
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
+    color: #292727;
+    text-align: center;
+    font-size: 45px;
+}
+
+.container-dev {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.isi {
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    color: #3B3B3A;
+    text-align: center;
+    font-size: 25px;
+    line-height: 26px;
+}
+
+.container-isi {
+    margin-top: 20px;
+}
+
+.mee {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px #151515;
+}
+
+.container-back {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.icon {
+    font-size: 38px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #007bff;
+}
+
+.mt-3 {
+    font-family: "Poppins", system-ui;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.back-font {
+    font-family: "Poppins", system-ui;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    color: #4151FF;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.back-font:hover {
+    color: blue;
+}
+
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.50s ease-out, transform 0.50s ease-out;
+}
+
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.50s ease-out, transform 0.50s ease-out;
+}
+
+.fade-in-left.appear,
+.fade-in-right.appear {
+    opacity: 1;
+    transform: translateX(0);
+}

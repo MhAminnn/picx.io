@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: 'apple-pro';
+    src: url('apple-pro.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  background-color: #000;
+  
+}
+
+.mt {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  background-position: center center;
+}
+
+.judul {
+  font-family: "Poppins", system-ui;
+  font-size: 28px;
+  color: #FAFAFA;
+  text-align: center;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.code {
+   font-family: 'apple-pro.OTF', system-ui;
+   font-size: 20px;
+   color: #FAFAFA;
+   font-weight: bold;
+   text-align: center;
+   line-height: 22px;
+}
+
+.back-main-404 {
+font-family: 'apple-pro.OTF', system-ui;
+   font-size: 20px;
+   color: #fff;
+   font-weight: bold;
+   text-align: center;
+  
+}

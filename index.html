@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiCX.IO - Tools Sosial Media Terbaik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'facebook-blue': '#1877F2',
+                        'picx-purple': '#8A2BE2',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <header class="bg-white shadow-md fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-facebook-blue">
+                    PiCX<span class="text-picx-purple">.IO</span>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Beranda</a>
+                    <a href="index.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Tools</a>
+                    <a href="#" class="text-gray-800 hover:text-facebook-blue transition duration-300">Tentang Kami</a>
+                    <a href="dev.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Kontak</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-800 hover:text-facebook-blue transition duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 transform -translate-x-full transition duration-300 ease-in-out bg-white w-64 z-20 md:hidden">
+        <div class="p-6">
+            <div class="flex justify-end">
+                <button id="close-menu" class="text-gray-800 hover:text-facebook-blue transition duration-300">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-8 flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Beranda</a>
+                <a href="#tools" class="text-gray-800 hover:text-facebook-blue transition duration-300">Tools</a>
+                <a href="dev.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Tentang Kami</a>
+                <a href="dev.html" class="text-gray-800 hover:text-facebook-blue transition duration-300">Kontak</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="pt-16">
+        <section class="bg-gradient-to-r from-facebook-blue to-picx-purple text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Selamat Datang di PiCX.IO</h1>
+                <p class="text-xl mb-8">Platform Tools Sosial Media Terbaik untuk Anda</p>
+                <a href="#tools" class="bg-white text-facebook-blue font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">Mulai Sekarang</a>
+            </div>
+        </section>
+
+        <section id="tools" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Tools Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-facebook-blue">TikTok Video Downloader</h3>
+                        <p class="text-gray-600 mb-4">Unduh video TikTok favorit Anda dengan mudah dan cepat.</p>
+                        <a href="homepage.html" class="text-picx-purple hover:underline">Gunakan Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-facebook-blue">TikTok Music Downloader</h3>
+                        <p class="text-gray-600 mb-4">Dapatkan musik dari video TikTok dalam format MP3.</p>
+                        <a href="homepage.html" class="text-picx-purple hover:underline">Gunakan Tool</a>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
+                        <h3 class="text-xl font-semibold mb-4 text-facebook-blue">TikTok Image Downloader</h3>
+                        <p class="text-gray-600 mb-4">Unduh gambar dari TikTok dengan kualitas terbaik.</p>
+                        <a href="scraper-image.html" class="text-picx-purple hover:underline">Gunakan Tool</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Mengapa Memilih PiCX.IO?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="bg-white rounded-full p-4 inline-block mb-4">
+                            <svg class="h-12 w-12 text-facebook-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Cepat</h3>
+                        <p class="text-gray-600">Proses unduhan yang super cepat untuk semua jenis konten.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white rounded-full p-4 inline-block mb-4">
+                            <svg class="h-12 w-12 text-facebook-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Aman</h3>
+                        <p class="text-gray-600">Keamanan data Anda adalah prioritas utama kami.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white rounded-full p-4 inline-block mb-4">
+                            <svg class="h-12 w-12 text-facebook-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Mudah Digunakan</h3>
+                        <p class="text-gray-600">Interface yang intuitif dan ramah pengguna.</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white rounded-full p-4 inline-block mb-4">
+                            <svg class="h-12 w-12 text-facebook-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Berkualitas Tinggi</h3>
+                        <p class="text-gray-600">Hasil unduhan dengan kualitas terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Cara Menggunakan PiCX.IO</h2>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex-1 max-w-sm">
+                        <div class="text-4xl font-bold text-facebook-blue mb-4">1</div>
+                        <h3 class="text-xl font-semibold mb-2">Salin URL</h3>
+                        <p class="text-gray-600">Salin URL video, musik, atau gambar TikTok yang ingin Anda unduh.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex-1 max-w-sm">
+                        <div class="text-4xl font-bold text-facebook-blue mb-4">2</div>
+                        <h3 class="text-xl font-semibold mb-2">Tempel & Analisis</h3>
+                        <p class="text-gray-600">Tempel URL ke dalam kotak input dan klik tombol analisis.</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg p-6 flex-1 max-w-sm">
+                        <div class="text-4xl font-bold text-facebook-blue mb-4">3</div>
+                        <h3 class="text-xl font-semibold mb-2">Unduh</h3>
+                        <p class="text-gray-600">Pilih format yang diinginkan dan klik tombol unduh.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">PiCX<span class="text-picx-purple">.IO</span></h2>
+                    <p class="mt-2">Tools Sosial Media Terbaik untuk Anda</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="dev.html" class="hover:text-facebook-blue transition duration-300">Tentang Kami</a>
+                    <a href="terms.html" class="hover:text-facebook-blue transition duration-300">Kebijakan Privasi</a>
+                    <a href="user.html" class="hover:text-facebook-blue transition duration-300">Syarat & Ketentuan</a>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="text-center">
+                <p>&copy; 2023 PiCX.IO. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('-translate-x-full');
+        });
+
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('-translate-x-full');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                mobileMenu.classList.add('-translate-x-full');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
